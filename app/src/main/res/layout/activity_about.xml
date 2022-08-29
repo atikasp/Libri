@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".About">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarBack"
+        app:title="Profile"
+        android:layout_marginBottom="10dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/profilpic"
+        android:elevation="6dp"
+        app:civ_border_color="#959C9B"
+        app:civ_border_width="3dp" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#3C3A3A" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/iconprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_50"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/iconemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"
+            android:layout_below="@id/iconprofil"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iconprofil"
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:textColor="#3C403F"
+            android:layout_marginTop="25dp"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="36dp"
+            android:layout_toEndOf="@+id/iconemail"
+            android:text="@string/email"
+            android:textColor="#3C403F"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

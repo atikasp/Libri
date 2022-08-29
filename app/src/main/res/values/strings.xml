@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Libri</string>
+    <string name="library_app">Libri</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="close">Close</string>
+    <string name="wish_list">Wishlist</string>
+    <string name="my_books">My Books</string>
+    <string name="search_hint">Title, Writer</string>
+    <string name="name">Atika SP</string>
+    <string name="email">atikasparindo@gmail.com</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="total_of_books">Total of books :</string>
+    <string name="title">Title</string>
+    <string name="writer">Writer</string>
+    <string name="description">Description</string>
+    <string name="save">SAVE</string>
+    <string name="my_wishlist">My Wishlist :</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".WishlistActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarBack"
+        app:title="Wishlist"
+        android:layout_marginBottom="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/frame"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/inputcover"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:adjustViewBounds="true"
+                        android:background="#FAFAFA" />
+
+                    <ImageButton
+                        android:id="@+id/cover_wish"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_camera" />
+                </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/et_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/frame"
+                        style="@style/TextStyle"
+                        android:textSize="16sp"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:hint="@string/title"
+                        android:autofillHints="" />
+
+                    <EditText
+                        android:id="@+id/et_writer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/frame"
+                        android:layout_below="@+id/et_title"
+                        style="@style/TextStyle"
+                        android:textSize="16sp"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:hint="@string/writer"
+                        android:autofillHints="" />
+
+
+            </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto"
+        android:paddingHorizontal="150dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#01B399"
+        android:text="@string/save" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/my_wishlist" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_wishbooks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/wishbook_item" />
+
+        </RelativeLayout>
+
+</LinearLayout>

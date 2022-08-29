@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/header">
+    <!--
+    https://www.freepik.com/free-vector/bibliophile-concept-illustration_6200235.htm
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_app"
+            android:textColor="#385A64"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
